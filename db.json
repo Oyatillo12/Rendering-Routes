@@ -1,0 +1,44 @@
+{
+    "routes": [
+        {
+            "name": "HomePage",
+            "path": "/",
+            "element": "Home",
+            "type": "public",
+            "childrenElement": [
+                {
+                    "name": "Option 1",
+                    "path": "option-1",
+                    "element": "Option1",
+                    "type": "private",
+                    "childrenElement": [
+                        {
+                            "name": "Suboption 1",
+                            "path": "suboption-1",
+                            "element": "SubOption1",
+                            "type": "private"
+                        },
+                        {
+                            "name": "Suboption 2",
+                            "path": "suboption-2",
+                            "element": "SubOption2",
+                            "type": "private"
+                        }
+                    ]
+                },
+                {
+                    "name": "Option 2",
+                    "path": "option-2",
+                    "element": "Option2",
+                    "type": "private"
+                }
+            ]
+        },
+        {
+            "name": "ProfilePage",
+            "path": "/profile",
+            "element": "Profile",
+            "type": "public"
+        }
+    ]
+}
