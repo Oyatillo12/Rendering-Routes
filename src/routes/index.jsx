@@ -12,11 +12,11 @@ import useRenderingRoutes from '../hooks/useRenderingRoutes';
 function CustomRoutes() {
     const { isAuthenticated } = useContext(AuthContext);
     const [routesData, setRoutesData] = useState([]);
-    useEffect(() => {
+    useEffect(() => {setRoutesData
         async function fetchRoutes() {
             try {
                 const res = await useAxios().get('/routes');
-                setRoutesData(res.data);
+                setRoutesData(res.data)
             } catch (error) {
                 console.log(error);
             }

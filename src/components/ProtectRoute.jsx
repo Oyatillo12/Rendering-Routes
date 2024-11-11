@@ -1,4 +1,4 @@
-import { Navigate} from "react-router-dom";
+import { Navigate, useNavigate} from "react-router-dom";
 
 function ProtectRoute({ element, isPrivate, isAuthenticated }) {
     if (isPrivate && !isAuthenticated) {
